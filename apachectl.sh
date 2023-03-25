@@ -61,7 +61,7 @@ LYNX="lynx -dump"
 #
 # the URL to your server's mod_status status page.  If you do not
 # have one, then status and fullstatus will not work.
-STATUSURL="http://127.0.0.1:8080/server-status"
+STATUSURL="http://127.0.0.1:8080/tv-digital-masjid/index.html"
 #
 # Set this variable to a command that increases the maximum
 # number of file descriptors allowed per child process. This is
@@ -110,13 +110,13 @@ esac
 if [ $ERROR -eq 0 ]
 then
     clear
-    termux-open-url http://127.0.0.1:8080/tv-digital-masjid/
+    termux-open-url http://127.0.0.1:8080/tv-digital-masjid/index.html
 else
     clear
     echo "Address Already in use..."
-    echo "trying to ping http://127.0.0.1:8080/tv-digital-masjid/"
+    echo "trying to ping http://127.0.0.1:8080/tv-digital-masjid/index.html"
     sleep 3
-    termux-open-url http://127.0.0.1:8080/tv-digital-masjid/
+    termux-open-url http://127.0.0.1:8080/tv-digital-masjid/index.html
 fi
 
 
